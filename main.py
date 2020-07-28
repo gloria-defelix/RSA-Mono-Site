@@ -4,14 +4,12 @@ import storage
 import email_helper
 from google.cloud import error_reporting
 
+
+#***REMOVED***
 # ***GLORIA ADDED THESE 2 LINE - REFERENCE: "Deploying a Python Flask site" https://google.qwiklabs.com/focuses/3339?parent=catalog***
-
-from app.yaml import env_variables
-
+#from app.yaml import CLOUD_STORAGE_BUCKET
 # app.yaml file contains this variable: "env_variables":
-
-CLOUD_STORAGE_BUCKET = env_variables.get('CLOUD_STORAGE_BUCKET')
-
+#CLOUD_STORAGE_BUCKET = env_variables.get('CLOUD_STORAGE_BUCKET')
 # ***GLORIA COMMENTED THIS LINE OUT: Colab throwing this error: "NameError: name 'os' is not defined"
 # CLOUD_STORAGE_BUCKET = os.environ.get('CLOUD_STORAGE_BUCKET')
 
