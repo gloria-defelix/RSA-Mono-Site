@@ -6,7 +6,8 @@ from google.cloud import error_reporting
 
 # ***GLORIA ADDED THESE 2 LINE - REFERENCE: "Deploying a Python Flask site" https://google.qwiklabs.com/focuses/3339?parent=catalog***
 
-import app.yaml
+from app.yaml import env_variables
+
 # app.yaml file contains this variable: "env_variables":
 
 CLOUD_STORAGE_BUCKET = env_variables.get('CLOUD_STORAGE_BUCKET')
